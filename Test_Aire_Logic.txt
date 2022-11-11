@@ -1,0 +1,56 @@
+Test: 
+
+Aire Logic Technical Operations Test:
+
+Prefix: 
+
+1. Create a EC2-Instance (t2.micro, Ubuntu OS/Amz-Linux) 
+2. Login into the EC2-Instance
+3. Update the System
+4. Install the Docker 
+5. Start the docker-Daemon
+
+
+Lab: 
+1 & 2 you can finish.
+Note: I have installed the EC2-Instance with Amx-Linux OS 
+3. # yum udpate -y 
+4. # yum install docker* -y 
+5. # systemctl start docker 
+   # systemctl status docker 
+
+
+Objectives
+Objective 1: Echo Server
+
+Steps: 
+
+1. Create a container with name "greeter"
+	Use the docker image as Debian  (https://hub.docker.com/_/debian)
+2. Before that write a Dockerfile
+3. Create a Docker Image with Dockerfile
+4. Now you can create a container and expose it with Host machine Port
+5. Try to access the HTTP-Server 
+
+
+
+
+
+Steps: 
+
+1. Create a container with name "reverse-proxy"
+	Use the docker image as CentOS   (https://hub.docker.com/_/centos)
+2. Before that write a Dockerfile
+3. Create a Docker Image with Dockerfile
+4. Now you can create a container and expose it with Host machine Port 
+5. Try to access the Nginx-reverse-Proxy 
+
+
+
+
+
+
+
+
+
+

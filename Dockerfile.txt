@@ -1,0 +1,10 @@
+Dockerfile  index.html
+[root@ip-172-31-36-193 test]# cat Dockerfile
+FROM debian:11.5
+MAINTAINER kumar
+RUN apt update -y
+RUN apt install apache2 -y
+COPY index.html /var/www/html/
+CMD ["apache2ctl", "-D", "FOREGROUND"]
+EXPOSE 80
+ENV NAME Dileep
